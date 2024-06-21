@@ -21,7 +21,8 @@ i18n
       if (language === 'en-US') {
         return enUsLocale
       }
-      return import(`./i18n/locales/translations/${language}.json`)
+      // return import(`./i18n/locales/translations/${language}.json`)
+      return enUsLocale
     })
   )
   .on('failedLoading', (language, namespace, msg) => {
